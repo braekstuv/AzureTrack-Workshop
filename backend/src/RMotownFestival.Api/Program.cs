@@ -10,6 +10,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Configuration.AzureKeyVault;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Azure.Identity;
 
 namespace RMotownFestival.Api
 {
