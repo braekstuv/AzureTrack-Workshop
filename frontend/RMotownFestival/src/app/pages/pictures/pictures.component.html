@@ -2,7 +2,7 @@
 <a href="/upload">Upload your picture</a>
 <div class="row">
   <ng-container *ngIf="(pictureUrls$ | async)?.length > 0; else noPictures">
-    <div class="col-3" *ngFor="url of pictureUrls$ | async">
+    <div class="col-3" *ngFor="let url of pictureUrls$ | async">
       <img [src]="url" class="img-fluid" />
     </div>
   </ng-container>

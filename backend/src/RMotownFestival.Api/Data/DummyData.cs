@@ -16,7 +16,8 @@ namespace RMotownFestival.Api.Data
             var stages = new List<Stage>() {
                          new Stage { Id = 1, Name = "Main Stage", Description = description },
                          new Stage { Id = 2, Name = "Orange Room", Description = description },
-                         new Stage { Id = 3, Name = "StarDust", Description = description }
+                         new Stage { Id = 3, Name = "StarDust", Description = description },
+                         new Stage { Id = 3, Name = "Pink Room", Description = description },
             };
 
             var artists = new List<Artist>() {
@@ -25,15 +26,15 @@ namespace RMotownFestival.Api.Data
                       new Artist { Id = 3, Name = "Stevie Wonder", ImagePath = "steviewonder.jpg", Website = new Uri("http://www.steviewonder.net/") },
                       new Artist { Id = 4, Name = "Lionel Richie", ImagePath = "lionelrichie.jpg", Website = new Uri("http://lionelrichie.com/") },
                       new Artist { Id = 5, Name = "Marvin Gaye", ImagePath = "marvingaye.jpg", Website = new Uri("http://www.marvingayepage.net/") }
-        };
+            };
 
             Schedule lineUp = new Schedule();
             lineUp.Items.Add(new ScheduleItem { Id = 1, Artist = artists[0], Stage = stages[0], Time = new DateTime(1972, 07, 01, 20, 0, 0) });
-            lineUp.Items.Add(new ScheduleItem { Id = 2, Artist = artists[4], Stage = stages[1], Time = new DateTime(1972, 07, 01, 20, 30, 0) });
+            lineUp.Items.Add(new ScheduleItem { Id = 2, Artist = artists[4], Stage = stages[3], Time = new DateTime(1972, 07, 01, 20, 30, 0) });
             lineUp.Items.Add(new ScheduleItem { Id = 3, Artist = artists[2], Stage = stages[0], Time = new DateTime(1972, 07, 01, 22, 0, 0) });
             lineUp.Items.Add(new ScheduleItem { Id = 4, Artist = artists[1], Stage = stages[1], Time = new DateTime(1972, 07, 01, 22, 15, 0) });
             lineUp.Items.Add(new ScheduleItem { Id = 5, Artist = artists[0], Stage = stages[0], Time = new DateTime(1972, 07, 02, 20, 15, 0) });
-            lineUp.Items.Add(new ScheduleItem { Id = 6, Artist = artists[4], Stage = stages[1], Time = new DateTime(1972, 07, 02, 20, 45, 0) });
+            lineUp.Items.Add(new ScheduleItem { Id = 6, Artist = artists[4], Stage = stages[3], Time = new DateTime(1972, 07, 02, 20, 45, 0) });
             lineUp.Items.Add(new ScheduleItem { Id = 7, Artist = artists[3], Stage = stages[0], Time = new DateTime(1972, 07, 02, 22, 0, 0) });
             lineUp.Items.Add(new ScheduleItem { Id = 8, Artist = artists[1], Stage = stages[1], Time = new DateTime(1972, 07, 02, 22, 30, 0) });
 
